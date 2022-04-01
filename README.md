@@ -1,11 +1,10 @@
-# AWS VPC Terraform module
+# AWS ec2 Terraform module
 
-Terraform module which creates VPC resources on AWS. Will create two private and public subnets by default.
-
+Terraform module which creates ec2 resources on AWS. 
 ### Usage
 ```
-module "vpc" {
-  source = "github.com/tecbrix/aws-vpc"
+module "ec2" {
+  source = "github.com/tecbrix/aws-ec2"
   name = "test"
   env  = "test"
 }
