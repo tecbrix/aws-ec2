@@ -7,6 +7,9 @@ variable "vpc_id" {
 variable "vpc_cidr" {
     default = "will be apply"
 }
+variable "subnet_id" {
+    default = "will be apply"
+}
 variable "userdata" {
     default = "files/userdata.sh"
 }
