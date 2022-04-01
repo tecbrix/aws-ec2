@@ -1,6 +1,9 @@
 variable "region" {
     default = "eu-west-1"
 }
+variable "vpc_id" {
+    default = "will be apply"
+}
 variable "userdata" {
     default = "files/userdata.sh"
 }
