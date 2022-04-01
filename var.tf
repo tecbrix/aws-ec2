@@ -4,6 +4,9 @@ variable "region" {
 variable "vpc_id" {
     default = "will be apply"
 }
+variable "vpc_cidr" {
+    default = "will be apply"
+}
 variable "userdata" {
     default = "files/userdata.sh"
 }
