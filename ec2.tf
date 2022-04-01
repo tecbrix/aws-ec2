@@ -11,7 +11,7 @@ resource "aws_instance" "ec2" {
   associate_public_ip_address = true
   subnet_id                   = var.subnet_id
 
-  user_data = file(var.userdata)
+  user_data = data.template_file.init.rendered
 
   tags = local.tags
 }
