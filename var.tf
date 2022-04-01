@@ -37,7 +37,6 @@ variable "db_pwd" {
 variable "db_name" {
     default = "will be apply"
 }
-variable "subnet_id" {
  locals {
    tags = {
       env = var.env
