@@ -25,8 +25,19 @@ variable "env" {
 variable "name" {
     default = "wordpresstest"
 }
+variable "db_host" {
+    default = "will be apply"
+}
+variable "db_user" {
+    default = "will be apply"
+}
+variable "db_pwd" {
+    default = "will be apply"
+}
+variable "db_name" {
+    default = "will be apply"
+}
 variable "subnet_id" {
-    d
  locals {
    tags = {
       env = var.env
