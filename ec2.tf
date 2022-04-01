@@ -15,7 +15,7 @@ resource "aws_instance" "ec2" {
   associate_public_ip_address = true
   subnet_id                   = module.vpc.pub_subnet_for_ec2
 
-  user_data = file("files/userdata.sh")
+  user_data = file(var.userdata)
 
   tags = local.tags
 }
