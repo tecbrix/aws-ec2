@@ -25,6 +25,8 @@ variable "env" {
 variable "name" {
     default = "wordpresstest"
 }
+variable "subnet_id" {
+    d
  locals {
    tags = {
       env = var.env
