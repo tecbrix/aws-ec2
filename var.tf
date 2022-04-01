@@ -1,6 +1,9 @@
 variable "region" {
     default = "eu-west-1"
 }
+variable "userdata" {
+    default = "files/userdata.sh"
+}
  variable "instance_type" {
      default = "t3.micro"
  }
