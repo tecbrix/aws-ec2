@@ -4,6 +4,9 @@ variable "region" {
 variable "vpc_id" {
     default = "will be apply"
 }
+variable "web_sec_id" {
+    default = "will be apply"
+}
 variable "vpc_cidr" {
     default = "will be apply"
 }
