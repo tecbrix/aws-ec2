@@ -5,7 +5,6 @@ resource "aws_key_pair" "deployer" {
 
 resource "aws_instance" "ec2" {
     depends_on = [
-    module.vpc,
     aws_security_group.web
   ]
   ami = data.aws_ami.ubuntu.id
