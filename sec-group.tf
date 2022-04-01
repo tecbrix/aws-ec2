@@ -1,7 +1,7 @@
 resource aws_security_group "web" {
   name        = "${var.name}-webSG"
   description = "This is for ${var.name}s web servers security group"
-  vpc_id      = module.vpc.vpc_id
+  vpc_id      = var.vpc_id
 
   tags = {
     Name = "${var.name}-webSG"
